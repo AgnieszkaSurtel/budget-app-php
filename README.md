@@ -3,7 +3,7 @@
 A modern, secure web application designed for personal budget management and financial tracking. Built from scratch using native PHP with strict adherence to the **Model-View-Controller (MVC)** architectural pattern.
 
 ## 🚀 Live Demo
-You can check out the working application here: [https://agnieszkasurtel.com/budget/](url)
+You can check out the working application here: https://agnieszkasurtel.com/budget/
 
 ## ✨ Features
 * **Full Authentication System:** Secure user registration and login.
