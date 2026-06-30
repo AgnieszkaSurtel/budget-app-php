@@ -188,16 +188,40 @@ h3 {
     color: #888;
 }
 
+.table, .financial-table {
+    table-layout: auto !important;
+    width: 100% !important;
+}
+
 .table td,
 .table th {
-    white-space: normal !important;
-    word-break: break-word;
+    white-space: nowrap !important; 
     padding: 12px 15px !important;
     vertical-align: middle;
+    overflow: visible !important;   
+    text-overflow: clip !important;
 }
+
+
+.table th:nth-child(1), .table td:nth-child(1) { min-width: 120px !important; } 
+.table th:nth-child(2), .table td:nth-child(2) { min-width: 150px !important; } 
+.table th:nth-child(3), .table td:nth-child(3) { min-width: 130px !important; } 
+.table th:nth-child(4), .table td:nth-child(4) { min-width: 160px !important; } 
+.table th:nth-child(5), .table td:nth-child(5) { min-width: 90px !important;  } 
+
+.table th:nth-child(4), .table td:nth-child(4) {
+    white-space: normal !important;
+    word-break: break-word;
+}
+
 @media (min-width: 768px) {
-    .table {
-        table-layout: fixed !important;
+    .table, .financial-table {
+        table-layout: fixed !important; 
     }
-   
+
+    .table th:nth-child(1), .table td:nth-child(1) { width: 15% !important; }
+    .table th:nth-child(2), .table td:nth-child(2) { width: 20% !important; }
+    .table th:nth-child(3), .table td:nth-child(3) { width: 20% !important; text-align: right !important; }
+    .table th:nth-child(4), .table td:nth-child(4) { width: 30% !important; }
+    .table th:nth-child(5), .table td:nth-child(5) { width: 15% !important; text-align: center !important; }
 }
