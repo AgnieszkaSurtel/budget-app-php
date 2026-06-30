@@ -92,7 +92,7 @@ body {
 }
 
 .table {
-    table-layout: fixed;
+    table-layout: auto !important;
     width: 100%;
 }
 
@@ -190,6 +190,14 @@ h3 {
 
 .table td,
 .table th {
+    white-space: normal !important;
+    word-break: break-word;
     padding: 12px 15px !important;
     vertical-align: middle;
+}
+@media (min-width: 768px) {
+    .table {
+        table-layout: fixed !important;
+    }
+   
 }
