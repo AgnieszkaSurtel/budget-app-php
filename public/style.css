@@ -61,10 +61,6 @@ body {
     transition: transform 0.3s ease;
 }
 
-.cash.money:hover {
-    transform: translateY(-5px);
-}
-
 .as-seen-in {
     opacity: 0.5;
     filter: grayscale(100%);
